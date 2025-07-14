@@ -15,6 +15,7 @@ router.post('/', async (req, res)=>{
         res.status(500).send({error: "Internal Server Error"});
     }
 })
+// comment added
 router.get('/', async (req, res)=>{
     try{
         const data=await MenuItem.find();
